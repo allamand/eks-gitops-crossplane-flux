@@ -3,9 +3,10 @@
 # The bootstrap process will automatically create a GitRepository custom resource that points to the given repository
 # The GitRepository resource is named after the namespace where Flux GitOps ToolKit is installed. In this case, it is 'flux-system'
 #
-export CLUSTER_NAME=k8s-addon-cluster
-export GITHUB_TOKEN=ghp
-export GITHUB_USER=vijayansarathy
+#export CLUSTER_NAME=k8s-addon-cluster
+export CLUSTER_NAME=spark-eks-best-practices
+export GITHUB_TOKEN=224fb0222fa0bc2755457577338a15408a9dc479
+export GITHUB_USER=allamand
 kubectl create ns flux-system
 flux bootstrap github \
   --components-extra=image-reflector-controller,image-automation-controller \
