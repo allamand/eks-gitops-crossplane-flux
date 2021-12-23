@@ -16,7 +16,7 @@ spec:
   healthChecks:
   - kind: Deployment
     name: sealed-secrets-controller
-    namespace: sealed-secrets
+    namespace: kube-system
   - kind: Deployment
     name: crossplane-provider-aws-af9a74d1989f
     namespace: crossplane-system
