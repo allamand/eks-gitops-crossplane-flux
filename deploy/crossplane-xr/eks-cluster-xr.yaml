@@ -1,29 +1,29 @@
 ---
-apiVersion: eks.sarathy.io/v1beta1
+apiVersion: eks.allamand.com/v1beta1
 kind: EKSCluster
 metadata:
   name: crossplane-flux-cluster
 spec:
   parameters:
-    region: us-west-2
+    region: eu-west-3
     vpc-name: 'crossplane-flux-vpc'
     vpc-cidrBlock: '10.20.0.0/16'
 
     subnet1-public-name: 'public-worker-1'
     subnet1-public-cidrBlock: '10.20.1.0/28'
-    subnet1-public-availabilityZone: 'us-west-2a'
+    subnet1-public-availabilityZone: 'eu-west-3a'
 
     subnet2-public-name: 'public-worker-2'
     subnet2-public-cidrBlock: '10.20.2.0/28'
-    subnet2-public-availabilityZone: 'us-west-2b'
+    subnet2-public-availabilityZone: 'eu-west-3b'
 
     subnet1-private-name: 'private-worker-1'
     subnet1-private-cidrBlock: '10.20.11.0/28'
-    subnet1-private-availabilityZone: 'us-west-2a'
+    subnet1-private-availabilityZone: 'eu-west-3a'
 
     subnet2-private-name: 'private-worker-2'
     subnet2-private-cidrBlock: '10.20.12.0/28'
-    subnet2-private-availabilityZone: 'us-west-2b'
+    subnet2-private-availabilityZone: 'eu-west-3b'
 
     k8s-version: '1.20'
     workload-type: 'non-gpu'
