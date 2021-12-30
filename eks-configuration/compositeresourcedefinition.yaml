@@ -78,24 +78,24 @@ spec:
                       description: AZ for private subnet 2
                       type: string
 
-                  cluster-role:
-                    description: EKS cluster role
-                    type: string
-                  workernode-role:
-                    description: EKS worker node role
-                    type: string
+                    cluster-role:
+                      description: EKS cluster role
+                      type: string
+                    workernode-role:
+                      description: EKS worker node role
+                      type: string
 
-                  k8s-version:
-                    description: Kubernetes version
-                    type: string
-                    enum: ['1.20', '1.21', '1.22']
-                  workers-size:
-                    description: Desired number of worker nodes in the cluster
-                    type: integer
-                  workload-type:
-                    description: Type of workloads to be run on this cluster (GPU or non-GPU)"
-                    type: string
-                    enum: ['gpu', 'non-gpu']
+                    k8s-version:
+                      description: Kubernetes version
+                      type: string
+                      enum: ['1.20', '1.21', '1.22']
+                    workers-size:
+                      description: Desired number of worker nodes in the cluster
+                      type: integer
+                    workload-type:
+                      description: Type of workloads to be run on this cluster (GPU or non-GPU)"
+                      type: string
+                      enum: ['gpu', 'non-gpu']
 
                   required:
                     - region

@@ -4,7 +4,7 @@ metadata:
   name: crossplane-eks-composition
 spec:
   ignoreCrossplaneConstraints: false
-  package: public.ecr.aws/seb-demo/crossplane-eks-composition:v5.0.3
+  package: public.ecr.aws/seb-demo/crossplane-eks-composition:v5.0.4
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 0
