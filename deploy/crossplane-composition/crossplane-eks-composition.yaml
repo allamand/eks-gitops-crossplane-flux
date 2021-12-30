@@ -1,0 +1,11 @@
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: crossplane-eks-composition
+spec:
+  ignoreCrossplaneConstraints: false
+  package: public.ecr.aws/seb-demo/crossplane-eks-composition:v5.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 0
+  skipDependencyResolution: false
