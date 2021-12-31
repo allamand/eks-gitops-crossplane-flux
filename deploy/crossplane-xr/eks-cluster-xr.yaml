@@ -3,6 +3,8 @@ apiVersion: eks.allamand.com/v1beta1
 kind: EKSCluster
 metadata:
   name: crossplane-flux-cluster
+  annotations:
+    flux.weave.works/ignore: 'true'
 spec:
   parameters:
     region: eu-west-3
