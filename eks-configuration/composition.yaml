@@ -457,7 +457,7 @@ spec:
               string:
                 fmt: '%s-ekscluster-connection'
         - fromFieldPath: 'spec.parameters.cluster-role'
-          toFieldPath: 'spec.forProvider.roleArn'                
+          toFieldPath: 'spec.forProvider.roleArn'
       connectionDetails:
         - name: cluster-ca
           fromConnectionSecretKey: clusterCA
@@ -497,4 +497,4 @@ spec:
                 gpu: AL2_x86_64_GPU
                 non-gpu: AL2_x86_64
         - fromFieldPath: 'spec.parameters.workernode-role'
-          toFieldPath: 'spec.forProvider.nodeRole'                
+          toFieldPath: 'spec.forProvider.nodeRole'

@@ -8,6 +8,7 @@ spec:
   crossplane:
     version: '>=v1.0.0'
   dependsOn:
-    #- provider: public.ecr.aws/seb-demo/crossplane-provider-aws
-    - provider: public.ecr.aws/awsvijisarathy/crossplane-provider-aws
-      version: '>=v0.14.0'
+    - provider: public.ecr.aws/seb-demo/crossplane-provider-aws
+      #- provider: public.ecr.aws/awsvijisarathy/crossplane-provider-aws
+      #https://github.com/crossplane/provider-aws/blob/master/cluster/UPGRADE.md#upgrade-from-v021x-to-v022x
+      version: '>=v0.17.0'
